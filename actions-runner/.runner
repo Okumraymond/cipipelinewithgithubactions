@@ -1,0 +1,9 @@
+﻿{
+  "agentId": 21,
+  "agentName": "Admins-MacBook-Pro",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus4.actions.githubusercontent.com/GEZslW8KBnH5tf58r4JvTnymsSzzw3mHUeSwZiUwzgqk64I0c9/",
+  "gitHubUrl": "https://github.com/Okumraymond/cipipelinewithgithubactions",
+  "workFolder": "_work"
+}
