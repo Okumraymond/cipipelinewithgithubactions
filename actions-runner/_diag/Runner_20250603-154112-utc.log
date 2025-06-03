@@ -1,0 +1,202 @@
+[2025-06-03 15:41:12Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-06-03 15:41:12Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 15:41:12Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 15:41:12Z INFO HostContext] Well known config file 'Credentials': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials'
+[2025-06-03 15:41:12Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 15:41:12Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 15:41:12Z INFO HostContext] Well known config file 'Runner': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.runner'
+[2025-06-03 15:41:12Z INFO Listener] Runner is built for OSX (X64) - osx-x64.
+[2025-06-03 15:41:12Z INFO Listener] RuntimeInformation: Darwin 24.5.0 Darwin Kernel Version 24.5.0: Tue Apr 22 19:53:26 PDT 2025; root:xnu-11417.121.6~2/RELEASE_X86_64.
+[2025-06-03 15:41:12Z INFO Listener] Version: 2.324.0
+[2025-06-03 15:41:12Z INFO Listener] Commit: da3412efd49b1cf1a0fbdcbcee4e4ac4cc2177c8
+[2025-06-03 15:41:12Z INFO Listener] Culture: en-US
+[2025-06-03 15:41:12Z INFO Listener] UI Culture: en-US
+[2025-06-03 15:41:12Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 15:41:12Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 15:41:12Z INFO Listener] Validating directory permissions for: '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 15:41:12Z INFO CommandLineParser] Parse
+[2025-06-03 15:41:12Z INFO CommandLineParser] Parsing 1 args
+[2025-06-03 15:41:12Z INFO CommandLineParser] parsing argument
+[2025-06-03 15:41:12Z INFO CommandLineParser] HasArgs: False
+[2025-06-03 15:41:12Z INFO CommandLineParser] Adding Command: run
+[2025-06-03 15:41:12Z INFO Listener] Arguments parsed
+[2025-06-03 15:41:12Z INFO Runner] ExecuteCommand
+[2025-06-03 15:41:12Z INFO ConfigurationStore] currentAssemblyLocation: /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin/Runner.Listener.dll
+[2025-06-03 15:41:12Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 15:41:12Z INFO ConfigurationStore] binPath: /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin
+[2025-06-03 15:41:12Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 15:41:12Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 15:41:12Z INFO ConfigurationStore] RootFolder: /Users/admin/Documents/Project/cicdpipeline/code/actions-runner
+[2025-06-03 15:41:12Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 15:41:12Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 15:41:12Z INFO HostContext] Well known config file 'Runner': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.runner'
+[2025-06-03 15:41:12Z INFO ConfigurationStore] ConfigFilePath: /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.runner
+[2025-06-03 15:41:12Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 15:41:12Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 15:41:12Z INFO HostContext] Well known config file 'MigratedRunner': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.runner_migrated'
+[2025-06-03 15:41:12Z INFO ConfigurationStore] MigratedConfigFilePath: /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.runner_migrated
+[2025-06-03 15:41:12Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 15:41:12Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 15:41:12Z INFO HostContext] Well known config file 'Credentials': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials'
+[2025-06-03 15:41:12Z INFO ConfigurationStore] CredFilePath: /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials
+[2025-06-03 15:41:12Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 15:41:12Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 15:41:12Z INFO HostContext] Well known config file 'MigratedCredentials': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_migrated'
+[2025-06-03 15:41:12Z INFO ConfigurationStore] MigratedCredFilePath: /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_migrated
+[2025-06-03 15:41:12Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 15:41:12Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 15:41:12Z INFO HostContext] Well known config file 'Service': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.service'
+[2025-06-03 15:41:12Z INFO ConfigurationStore] ServiceConfigFilePath: /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.service
+[2025-06-03 15:41:12Z INFO CommandSettings] Flag 'help': 'False'
+[2025-06-03 15:41:12Z INFO CommandSettings] Flag 'version': 'False'
+[2025-06-03 15:41:12Z INFO CommandSettings] Flag 'commit': 'False'
+[2025-06-03 15:41:12Z INFO CommandSettings] Flag 'check': 'False'
+[2025-06-03 15:41:12Z INFO CommandSettings] Command 'configure': 'False'
+[2025-06-03 15:41:12Z INFO CommandSettings] Command 'remove': 'False'
+[2025-06-03 15:41:12Z INFO CommandSettings] Command 'warmup': 'False'
+[2025-06-03 15:41:12Z INFO ConfigurationManager] LoadSettings
+[2025-06-03 15:41:12Z INFO ConfigurationStore] IsConfigured()
+[2025-06-03 15:41:12Z INFO ConfigurationStore] IsConfigured: True
+[2025-06-03 15:41:12Z INFO ConfigurationManager] Is configured: True
+[2025-06-03 15:41:12Z INFO ConfigurationStore] Read setting file: 324 chars
+[2025-06-03 15:41:12Z INFO ConfigurationManager] Settings Loaded
+[2025-06-03 15:41:12Z INFO ConfigurationStore] IsServiceConfigured()
+[2025-06-03 15:41:12Z INFO ConfigurationStore] IsServiceConfigured: False
+[2025-06-03 15:41:12Z INFO CommandSettings] Command 'run': 'True'
+[2025-06-03 15:41:12Z INFO ConfigurationStore] IsConfigured()
+[2025-06-03 15:41:12Z INFO ConfigurationStore] IsConfigured: True
+[2025-06-03 15:41:12Z INFO ConfigurationManager] Is configured: True
+[2025-06-03 15:41:12Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2025-06-03 15:41:12Z INFO Runner] Set runner startup type - Manual
+[2025-06-03 15:41:12Z INFO CommandSettings] Flag 'once': 'False'
+[2025-06-03 15:41:12Z INFO CommandSettings] Flag 'once': 'False'
+[2025-06-03 15:41:12Z INFO Runner] RunAsync
+[2025-06-03 15:41:12Z INFO ConfigurationManager] LoadMigratedSettings
+[2025-06-03 15:41:12Z INFO ConfigurationStore] IsMigratedConfigured()
+[2025-06-03 15:41:12Z INFO ConfigurationStore] IsMigratedConfigured: False
+[2025-06-03 15:41:12Z INFO Runner] Failed to load migrated settings: No migrated configuration found.
+[2025-06-03 15:41:12Z INFO Runner] Falling back to original .runner settings
+[2025-06-03 15:41:12Z INFO ConfigurationManager] LoadSettings
+[2025-06-03 15:41:12Z INFO ConfigurationStore] IsConfigured()
+[2025-06-03 15:41:12Z INFO ConfigurationStore] IsConfigured: True
+[2025-06-03 15:41:12Z INFO ConfigurationManager] Is configured: True
+[2025-06-03 15:41:12Z INFO ConfigurationManager] Settings Loaded
+[2025-06-03 15:41:12Z INFO MessageListener] {
+  "AgentId": 21,
+  "AgentName": "Admins-MacBook-Pro",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelinesghubeus4.actions.githubusercontent.com/GEZslW8KBnH5tf58r4JvTnymsSzzw3mHUeSwZiUwzgqk64I0c9/",
+  "GitHubUrl": "https://github.com/Okumraymond/cipipelinewithgithubactions",
+  "WorkFolder": "_work"
+}
+[2025-06-03 15:41:12Z INFO MessageListener] Loading Credentials
+[2025-06-03 15:41:12Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 15:41:12Z INFO ConfigurationStore] stored True
+[2025-06-03 15:41:12Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 15:41:12Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 15:41:12Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 15:41:12Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 15:41:12Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 15:41:12Z INFO HostContext] Well known config file 'RSACredentials': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams'
+[2025-06-03 15:41:12Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 15:41:12Z INFO MessageListener] Attempt to create session.
+[2025-06-03 15:41:12Z INFO MessageListener] Connecting to the Runner Server...
+[2025-06-03 15:41:12Z INFO RunnerServer] EstablishVssConnection
+[2025-06-03 15:41:12Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2025-06-03 15:41:12Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-03 15:41:12Z INFO RunnerServer] EstablishVssConnection
+[2025-06-03 15:41:12Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-06-03 15:41:12Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-03 15:41:12Z INFO RunnerServer] EstablishVssConnection
+[2025-06-03 15:41:12Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-06-03 15:41:12Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-03 15:41:14Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-03 15:41:14Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-03 15:41:14Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-03 15:41:14Z INFO MessageListener] VssConnection created
+[2025-06-03 15:41:14Z INFO Terminal] WRITE LINE: 
+[2025-06-03 15:41:14Z INFO Terminal] WRITE LINE: 
+[2025-06-03 15:41:15Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 15:41:15Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 15:41:16Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-06-03 15:41:16Z INFO MessageListener] Session created.
+[2025-06-03 15:41:16Z INFO MessageListener] Registering AuthMigrationChanged event handler.
+[2025-06-03 15:41:16Z INFO Terminal] WRITE LINE: Current runner version: '2.324.0'
+[2025-06-03 15:41:16Z INFO Terminal] WRITE LINE: 2025-06-03 15:41:16Z: Listening for Jobs
+[2025-06-03 15:41:16Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
+[2025-06-03 15:41:17Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 15:41:17Z INFO ConfigurationStore] stored True
+[2025-06-03 15:41:17Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 15:41:17Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 15:41:17Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 15:41:17Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 15:41:17Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 15:41:17Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 15:41:18Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-06-03 15:42:09Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 15:42:09Z INFO ConfigurationStore] stored True
+[2025-06-03 15:42:09Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 15:42:09Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 15:42:09Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 15:42:09Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 15:43:00Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 15:43:00Z INFO ConfigurationStore] stored True
+[2025-06-03 15:43:00Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 15:43:00Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 15:43:00Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 15:43:00Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 15:43:51Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 15:43:51Z INFO ConfigurationStore] stored True
+[2025-06-03 15:43:51Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 15:43:51Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 15:43:51Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 15:43:51Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 15:44:41Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 15:44:41Z INFO ConfigurationStore] stored True
+[2025-06-03 15:44:41Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 15:44:41Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 15:44:41Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 15:44:41Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 15:45:32Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 15:45:32Z INFO ConfigurationStore] stored True
+[2025-06-03 15:45:32Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 15:45:32Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 15:45:32Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 15:45:32Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 15:46:23Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 15:46:23Z INFO ConfigurationStore] stored True
+[2025-06-03 15:46:23Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 15:46:23Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 15:46:23Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 15:46:23Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 15:47:13Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 15:47:13Z INFO ConfigurationStore] stored True
+[2025-06-03 15:47:13Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 15:47:13Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 15:47:13Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 15:47:13Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 15:48:04Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 15:48:04Z INFO ConfigurationStore] stored True
+[2025-06-03 15:48:04Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 15:48:04Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 15:48:04Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 15:48:04Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 15:48:55Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 15:48:55Z INFO ConfigurationStore] stored True
+[2025-06-03 15:48:55Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 15:48:55Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 15:48:55Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 15:48:55Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 15:49:45Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 15:49:45Z INFO ConfigurationStore] stored True
+[2025-06-03 15:49:45Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 15:49:45Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 15:49:45Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 15:49:45Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 15:50:36Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 15:50:36Z INFO ConfigurationStore] stored True
+[2025-06-03 15:50:36Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 15:50:36Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 15:50:36Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 15:50:36Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
