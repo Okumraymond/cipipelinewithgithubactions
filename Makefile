@@ -7,7 +7,7 @@ build:
 
 # Run tests
 test:
-	pytest tests/ -v
+	PYTHONPATH=. pytest tests/ -v
 
 # Lint the code
 lint:

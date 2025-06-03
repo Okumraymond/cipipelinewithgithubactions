@@ -23,7 +23,9 @@ jobs:
         run: make build
 
       - name: Run tests
-        run: make test
+        run:| 
+	  cd code
+	  make test
 
       - name: Perform code linting
         run: make lint
