@@ -11,7 +11,7 @@ jobs:
     runs-on: self-hosted # Uses your self-hosted runner
 
     steps:
-      - uses: actions/checkout@v4  # ✅ Correct indentation (2 spaces under `steps`)
+      - uses: actions/checkout@v4
 
       - name: Set up Python
         run: |
@@ -23,9 +23,9 @@ jobs:
         run: make build
 
       - name: Run tests
-        run:| 
-	  cd code
-	  make test
+        run: |  # Added space here after 'run:'
+          cd code
+          make test
 
       - name: Perform code linting
         run: make lint
