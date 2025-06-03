@@ -1,0 +1,3364 @@
+[2025-06-03 16:16:43Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-06-03 16:16:43Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:43Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:43Z INFO HostContext] Well known config file 'Credentials': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials'
+[2025-06-03 16:16:43Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:43Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:43Z INFO HostContext] Well known config file 'Runner': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.runner'
+[2025-06-03 16:16:43Z INFO Worker] Version: 2.324.0
+[2025-06-03 16:16:43Z INFO Worker] Commit: da3412efd49b1cf1a0fbdcbcee4e4ac4cc2177c8
+[2025-06-03 16:16:43Z INFO Worker] Culture: en-US
+[2025-06-03 16:16:43Z INFO Worker] UI Culture: en-US
+[2025-06-03 16:16:43Z INFO Worker] Waiting to receive the job message from the channel.
+[2025-06-03 16:16:43Z INFO ProcessChannel] Receiving message of length 19342, with hash '5bd8ef2ec538b1585a96316aed8c0c7394bb4b6884275afec5567b4838d37dc9'
+[2025-06-03 16:16:43Z INFO Worker] Message received.
+[2025-06-03 16:16:43Z INFO Worker] Job message:
+ {
+  "fileTable": [
+    ".github/workflows/ci.yml"
+  ],
+  "mask": [
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/checkout",
+        "ref": "v3",
+        "repositoryType": "GitHub"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 14,
+        "col": 13,
+        "lit": "Checkout code"
+      },
+      "contextName": "__actions_checkout",
+      "condition": "success()",
+      "id": "d4432d2b-8d9f-4a2c-ae82-f39d3d05895c",
+      "name": "__actions_checkout"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 17,
+        "col": 13,
+        "lit": "Build API"
+      },
+      "contextName": "__run",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 18,
+              "col": 12,
+              "lit": "make build"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "e6a0d9f8-701b-4864-bf40-ed9cdcaea78d",
+      "name": "__run"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 20,
+        "col": 13,
+        "lit": "Run tests"
+      },
+      "contextName": "__run_2",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 21,
+              "col": 12,
+              "lit": "make test"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "87a4b89d-0a87-4198-8f2a-392845e7785c",
+      "name": "__run_2"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 23,
+        "col": 13,
+        "lit": "Perform code linting"
+      },
+      "contextName": "__run_3",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 24,
+              "col": 12,
+              "lit": "make lint"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "6f69d419-8e5c-4743-bb57-c0f08c906a75",
+      "name": "__run_3"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 26,
+        "col": 13,
+        "lit": "Login to Docker Registry"
+      },
+      "contextName": "__run_4",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 27,
+              "col": 12,
+              "expr": "format('echo \"{0}\" | docker login -u \"{1}\" --password-stdin {2}', secrets.DOCKER_PASSWORD, secrets.DOCKER_USERNAME, secrets.DOCKER_REGISTRY)"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "a3dfaba3-8ba6-4c5a-87ba-4d7ca91056ff",
+      "name": "__run_4"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 29,
+        "col": 13,
+        "lit": "Build and push Docker image"
+      },
+      "contextName": "__run_5",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 30,
+              "col": 12,
+              "expr": "format('docker build -t {0}/your-image-name:latest .\ndocker push {1}/your-image-name:latest\n', secrets.DOCKER_REGISTRY, secrets.DOCKER_REGISTRY)"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "e4a76e00-9f98-4589-8036-4fca1f7db88d",
+      "name": "__run_5"
+    }
+  ],
+  "variables": {
+    "Actions.EnableHttpRedirects": {
+      "value": "true"
+    },
+    "DOCKER_PASSWORD": {
+      "value": "***",
+      "isSecret": true
+    },
+    "DOCKER_REGISTRY": {
+      "value": "***",
+      "isSecret": true
+    },
+    "DistributedTask.AddWarningToNode12Action": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode16Action": {
+      "value": "true"
+    },
+    "DistributedTask.AllowRunnerContainerHooks": {
+      "value": "true"
+    },
+    "DistributedTask.DeprecateStepOutputCommands": {
+      "value": "true"
+    },
+    "DistributedTask.DetailUntarFailure": {
+      "value": "true"
+    },
+    "DistributedTask.EnableCompositeActions": {
+      "value": "true"
+    },
+    "DistributedTask.EnableJobServerQueueTelemetry": {
+      "value": "true"
+    },
+    "DistributedTask.EnhancedAnnotations": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode16": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode20": {
+      "value": "true"
+    },
+    "DistributedTask.LogTemplateErrorsAsDebugMessages": {
+      "value": "true"
+    },
+    "DistributedTask.MarkJobAsFailedOnWorkerCrash": {
+      "value": "true"
+    },
+    "DistributedTask.NewActionMetadata": {
+      "value": "true"
+    },
+    "DistributedTask.UploadStepSummary": {
+      "value": "true"
+    },
+    "DistributedTask.UseActionArchiveCache": {
+      "value": "true"
+    },
+    "DistributedTask.UseWhich2": {
+      "value": "true"
+    },
+    "RunService.FixEmbeddedIssues": {
+      "value": "true"
+    },
+    "actions_add_check_run_id_to_job_context": {
+      "value": "false"
+    },
+    "actions_display_helpful_actions_download_errors": {
+      "value": "false"
+    },
+    "actions_skip_retry_complete_job_upon_known_errors": {
+      "value": "true"
+    },
+    "actions_uses_cache_service_v2": {
+      "value": "true"
+    },
+    "github_token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.from_run_service": {
+      "value": "true"
+    },
+    "system.github.job": {
+      "value": "build-and-push"
+    },
+    "system.github.launch_endpoint": {
+      "value": "https://launch.actions.githubusercontent.com"
+    },
+    "system.github.results_endpoint": {
+      "value": "https://results-receiver.actions.githubusercontent.com/"
+    },
+    "system.github.results_upload_with_sdk": {
+      "value": "true"
+    },
+    "system.github.token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.github.token.permissions": {
+      "value": "{\"Contents\":\"read\",\"Metadata\":\"read\",\"Packages\":\"read\"}"
+    },
+    "system.orchestrationId": {
+      "value": "88ddc307-0a28-4ed1-8e92-1806e9b65f38.build-and-push.__default"
+    },
+    "system.phaseDisplayName": {
+      "value": "build-and-push"
+    },
+    "system.runner.lowdiskspacethreshold": {
+      "value": "100"
+    },
+    "system.runnerEnvironment": {
+      "value": "self-hosted"
+    }
+  },
+  "messageType": "RunnerJobRequest",
+  "plan": {
+    "scopeIdentifier": "00000000-0000-0000-0000-000000000000",
+    "planType": "actions",
+    "version": 0,
+    "planId": "88ddc307-0a28-4ed1-8e92-1806e9b65f38",
+    "planGroup": null,
+    "artifactUri": null,
+    "artifactLocation": null,
+    "definition": null,
+    "owner": null
+  },
+  "timeline": {
+    "id": "88ddc307-0a28-4ed1-8e92-1806e9b65f38",
+    "changeId": 0,
+    "location": null
+  },
+  "jobId": "a304a82b-f70e-56fd-9943-d4491315be6c",
+  "jobDisplayName": "build-and-push",
+  "jobName": "__default",
+  "requestId": 0,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "ServerId": "",
+          "ServerName": "",
+          "CacheServerUrl": "https://acghubeus2.actions.githubusercontent.com/GEZslW8KBnH5tf58r4JvTnymsSzzw3mHUeSwZiUwzgqk64I0c9/",
+          "FeedStreamUrl": "wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock",
+          "ResultsServiceUrl": "https://results-receiver.actions.githubusercontent.com/",
+          "PipelinesServiceUrl": "https://pipelinesghubeus4.actions.githubusercontent.com/GEZslW8KBnH5tf58r4JvTnymsSzzw3mHUeSwZiUwzgqk64I0c9/",
+          "GenerateIdTokenUrl": ""
+        },
+        "name": "SystemVssConnection",
+        "url": "https://run-actions-3-azure-eastus.actions.githubusercontent.com/84/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": "***"
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ]
+  },
+  "contextData": {
+    "github": {
+      "t": 2,
+      "d": [
+        {
+          "k": "ref",
+          "v": "refs/heads/main"
+        },
+        {
+          "k": "sha",
+          "v": "b22484403f614868352c26885fcde16730388a93"
+        },
+        {
+          "k": "repository",
+          "v": "Okumraymond/cipipelinewithgithubactions"
+        },
+        {
+          "k": "repository_owner",
+          "v": "Okumraymond"
+        },
+        {
+          "k": "repository_owner_id",
+          "v": "62183125"
+        },
+        {
+          "k": "repositoryUrl",
+          "v": "git://github.com/Okumraymond/cipipelinewithgithubactions.git"
+        },
+        {
+          "k": "run_id",
+          "v": "15422496540"
+        },
+        {
+          "k": "run_number",
+          "v": "1"
+        },
+        {
+          "k": "retention_days",
+          "v": "90"
+        },
+        {
+          "k": "run_attempt",
+          "v": "1"
+        },
+        {
+          "k": "artifact_cache_size_limit",
+          "v": "10"
+        },
+        {
+          "k": "repository_visibility",
+          "v": "public"
+        },
+        {
+          "k": "actor_id",
+          "v": "62183125"
+        },
+        {
+          "k": "actor",
+          "v": "Okumraymond"
+        },
+        {
+          "k": "workflow",
+          "v": "CI Pipeline"
+        },
+        {
+          "k": "head_ref",
+          "v": ""
+        },
+        {
+          "k": "base_ref",
+          "v": ""
+        },
+        {
+          "k": "event_name",
+          "v": "workflow_dispatch"
+        },
+        {
+          "k": "server_url",
+          "v": "https://github.com"
+        },
+        {
+          "k": "api_url",
+          "v": "https://api.github.com"
+        },
+        {
+          "k": "graphql_url",
+          "v": "https://api.github.com/graphql"
+        },
+        {
+          "k": "ref_name",
+          "v": "main"
+        },
+        {
+          "k": "ref_protected",
+          "v": false
+        },
+        {
+          "k": "ref_type",
+          "v": "branch"
+        },
+        {
+          "k": "secret_source",
+          "v": "Actions"
+        },
+        {
+          "k": "event",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "inputs",
+                "v": null
+              },
+              {
+                "k": "ref",
+                "v": "refs/heads/main"
+              },
+              {
+                "k": "repository",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "allow_forking",
+                      "v": true
+                    },
+                    {
+                      "k": "archive_url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions/{archive_format}{/ref}"
+                    },
+                    {
+                      "k": "archived",
+                      "v": false
+                    },
+                    {
+                      "k": "assignees_url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions/assignees{/user}"
+                    },
+                    {
+                      "k": "blobs_url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions/git/blobs{/sha}"
+                    },
+                    {
+                      "k": "branches_url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions/branches{/branch}"
+                    },
+                    {
+                      "k": "clone_url",
+                      "v": "https://github.com/Okumraymond/cipipelinewithgithubactions.git"
+                    },
+                    {
+                      "k": "collaborators_url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions/collaborators{/collaborator}"
+                    },
+                    {
+                      "k": "comments_url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions/comments{/number}"
+                    },
+                    {
+                      "k": "commits_url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions/commits{/sha}"
+                    },
+                    {
+                      "k": "compare_url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions/compare/{base}...{head}"
+                    },
+                    {
+                      "k": "contents_url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions/contents/{+path}"
+                    },
+                    {
+                      "k": "contributors_url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions/contributors"
+                    },
+                    {
+                      "k": "created_at",
+                      "v": "2025-05-28T09:34:32Z"
+                    },
+                    {
+                      "k": "default_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "deployments_url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions/deployments"
+                    },
+                    {
+                      "k": "description",
+                      "v": null
+                    },
+                    {
+                      "k": "disabled",
+                      "v": false
+                    },
+                    {
+                      "k": "downloads_url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions/downloads"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions/events"
+                    },
+                    {
+                      "k": "fork",
+                      "v": false
+                    },
+                    {
+                      "k": "forks",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions/forks"
+                    },
+                    {
+                      "k": "full_name",
+                      "v": "Okumraymond/cipipelinewithgithubactions"
+                    },
+                    {
+                      "k": "git_commits_url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions/git/commits{/sha}"
+                    },
+                    {
+                      "k": "git_refs_url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions/git/refs{/sha}"
+                    },
+                    {
+                      "k": "git_tags_url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions/git/tags{/sha}"
+                    },
+                    {
+                      "k": "git_url",
+                      "v": "git://github.com/Okumraymond/cipipelinewithgithubactions.git"
+                    },
+                    {
+                      "k": "has_discussions",
+                      "v": false
+                    },
+                    {
+                      "k": "has_downloads",
+                      "v": true
+                    },
+                    {
+                      "k": "has_issues",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pages",
+                      "v": false
+                    },
+                    {
+                      "k": "has_projects",
+                      "v": true
+                    },
+                    {
+                      "k": "has_wiki",
+                      "v": true
+                    },
+                    {
+                      "k": "homepage",
+                      "v": null
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions/hooks"
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/Okumraymond/cipipelinewithgithubactions"
+                    },
+                    {
+                      "k": "id",
+                      "v": 991880361.0
+                    },
+                    {
+                      "k": "is_template",
+                      "v": false
+                    },
+                    {
+                      "k": "issue_comment_url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions/issues/comments{/number}"
+                    },
+                    {
+                      "k": "issue_events_url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions/issues/events{/number}"
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions/issues{/number}"
+                    },
+                    {
+                      "k": "keys_url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions/keys{/key_id}"
+                    },
+                    {
+                      "k": "labels_url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions/labels{/name}"
+                    },
+                    {
+                      "k": "language",
+                      "v": "JavaScript"
+                    },
+                    {
+                      "k": "languages_url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions/languages"
+                    },
+                    {
+                      "k": "license",
+                      "v": null
+                    },
+                    {
+                      "k": "merges_url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions/merges"
+                    },
+                    {
+                      "k": "milestones_url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions/milestones{/number}"
+                    },
+                    {
+                      "k": "mirror_url",
+                      "v": null
+                    },
+                    {
+                      "k": "name",
+                      "v": "cipipelinewithgithubactions"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "R_kgDOOx7kqQ"
+                    },
+                    {
+                      "k": "notifications_url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions/notifications{?since,all,participating}"
+                    },
+                    {
+                      "k": "open_issues",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "open_issues_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "owner",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "avatar_url",
+                            "v": "https://avatars.githubusercontent.com/u/62183125?v=4"
+                          },
+                          {
+                            "k": "events_url",
+                            "v": "https://api.github.com/users/Okumraymond/events{/privacy}"
+                          },
+                          {
+                            "k": "followers_url",
+                            "v": "https://api.github.com/users/Okumraymond/followers"
+                          },
+                          {
+                            "k": "following_url",
+                            "v": "https://api.github.com/users/Okumraymond/following{/other_user}"
+                          },
+                          {
+                            "k": "gists_url",
+                            "v": "https://api.github.com/users/Okumraymond/gists{/gist_id}"
+                          },
+                          {
+                            "k": "gravatar_id",
+                            "v": ""
+                          },
+                          {
+                            "k": "html_url",
+                            "v": "https://github.com/Okumraymond"
+                          },
+                          {
+                            "k": "id",
+                            "v": 62183125.0
+                          },
+                          {
+                            "k": "login",
+                            "v": "Okumraymond"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "MDQ6VXNlcjYyMTgzMTI1"
+                          },
+                          {
+                            "k": "organizations_url",
+                            "v": "https://api.github.com/users/Okumraymond/orgs"
+                          },
+                          {
+                            "k": "received_events_url",
+                            "v": "https://api.github.com/users/Okumraymond/received_events"
+                          },
+                          {
+                            "k": "repos_url",
+                            "v": "https://api.github.com/users/Okumraymond/repos"
+                          },
+                          {
+                            "k": "site_admin",
+                            "v": false
+                          },
+                          {
+                            "k": "starred_url",
+                            "v": "https://api.github.com/users/Okumraymond/starred{/owner}{/repo}"
+                          },
+                          {
+                            "k": "subscriptions_url",
+                            "v": "https://api.github.com/users/Okumraymond/subscriptions"
+                          },
+                          {
+                            "k": "type",
+                            "v": "User"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/users/Okumraymond"
+                          },
+                          {
+                            "k": "user_view_type",
+                            "v": "public"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "private",
+                      "v": false
+                    },
+                    {
+                      "k": "pulls_url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions/pulls{/number}"
+                    },
+                    {
+                      "k": "pushed_at",
+                      "v": "2025-06-03T15:51:53Z"
+                    },
+                    {
+                      "k": "releases_url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions/releases{/id}"
+                    },
+                    {
+                      "k": "size",
+                      "v": 142146.0
+                    },
+                    {
+                      "k": "ssh_url",
+                      "v": "git@github.com:Okumraymond/cipipelinewithgithubactions.git"
+                    },
+                    {
+                      "k": "stargazers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions/stargazers"
+                    },
+                    {
+                      "k": "statuses_url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions/statuses/{sha}"
+                    },
+                    {
+                      "k": "subscribers_url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions/subscribers"
+                    },
+                    {
+                      "k": "subscription_url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions/subscription"
+                    },
+                    {
+                      "k": "svn_url",
+                      "v": "https://github.com/Okumraymond/cipipelinewithgithubactions"
+                    },
+                    {
+                      "k": "tags_url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions/tags"
+                    },
+                    {
+                      "k": "teams_url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions/teams"
+                    },
+                    {
+                      "k": "topics",
+                      "v": {
+                        "t": 1
+                      }
+                    },
+                    {
+                      "k": "trees_url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions/git/trees{/sha}"
+                    },
+                    {
+                      "k": "updated_at",
+                      "v": "2025-06-03T15:51:54Z"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/repos/Okumraymond/cipipelinewithgithubactions"
+                    },
+                    {
+                      "k": "visibility",
+                      "v": "public"
+                    },
+                    {
+                      "k": "watchers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "watchers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "web_commit_signoff_required",
+                      "v": false
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "sender",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/62183125?v=4"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/users/Okumraymond/events{/privacy}"
+                    },
+                    {
+                      "k": "followers_url",
+                      "v": "https://api.github.com/users/Okumraymond/followers"
+                    },
+                    {
+                      "k": "following_url",
+                      "v": "https://api.github.com/users/Okumraymond/following{/other_user}"
+                    },
+                    {
+                      "k": "gists_url",
+                      "v": "https://api.github.com/users/Okumraymond/gists{/gist_id}"
+                    },
+                    {
+                      "k": "gravatar_id",
+                      "v": ""
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/Okumraymond"
+                    },
+                    {
+                      "k": "id",
+                      "v": 62183125.0
+                    },
+                    {
+                      "k": "login",
+                      "v": "Okumraymond"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "MDQ6VXNlcjYyMTgzMTI1"
+                    },
+                    {
+                      "k": "organizations_url",
+                      "v": "https://api.github.com/users/Okumraymond/orgs"
+                    },
+                    {
+                      "k": "received_events_url",
+                      "v": "https://api.github.com/users/Okumraymond/received_events"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/users/Okumraymond/repos"
+                    },
+                    {
+                      "k": "site_admin",
+                      "v": false
+                    },
+                    {
+                      "k": "starred_url",
+                      "v": "https://api.github.com/users/Okumraymond/starred{/owner}{/repo}"
+                    },
+                    {
+                      "k": "subscriptions_url",
+                      "v": "https://api.github.com/users/Okumraymond/subscriptions"
+                    },
+                    {
+                      "k": "type",
+                      "v": "User"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/users/Okumraymond"
+                    },
+                    {
+                      "k": "user_view_type",
+                      "v": "public"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "workflow",
+                "v": ".github/workflows/ci.yml"
+              }
+            ]
+          }
+        },
+        {
+          "k": "workflow_ref",
+          "v": "Okumraymond/cipipelinewithgithubactions/.github/workflows/ci.yml@refs/heads/main"
+        },
+        {
+          "k": "workflow_sha",
+          "v": "b22484403f614868352c26885fcde16730388a93"
+        },
+        {
+          "k": "repository_id",
+          "v": "991880361"
+        },
+        {
+          "k": "triggering_actor",
+          "v": "Okumraymond"
+        }
+      ]
+    },
+    "inputs": {
+      "t": 2
+    },
+    "matrix": null,
+    "needs": {
+      "t": 2
+    },
+    "strategy": {
+      "t": 2,
+      "d": [
+        {
+          "k": "fail-fast",
+          "v": true
+        },
+        {
+          "k": "job-index",
+          "v": 0.0
+        },
+        {
+          "k": "job-total",
+          "v": 1.0
+        },
+        {
+          "k": "max-parallel",
+          "v": 1.0
+        }
+      ]
+    },
+    "vars": {
+      "t": 2
+    }
+  },
+  "billingOwnerId": "U_kgDOA7TW1Q"
+}
+[2025-06-03 16:16:43Z INFO JobRunner] Job ID a304a82b-f70e-56fd-9943-d4491315be6c
+[2025-06-03 16:16:43Z INFO ConfigurationStore] currentAssemblyLocation: /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin/Runner.Worker.dll
+[2025-06-03 16:16:43Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:43Z INFO ConfigurationStore] binPath: /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin
+[2025-06-03 16:16:43Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:43Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:43Z INFO ConfigurationStore] RootFolder: /Users/admin/Documents/Project/cicdpipeline/code/actions-runner
+[2025-06-03 16:16:43Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:43Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:43Z INFO HostContext] Well known config file 'Runner': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.runner'
+[2025-06-03 16:16:43Z INFO ConfigurationStore] ConfigFilePath: /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.runner
+[2025-06-03 16:16:43Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:43Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:43Z INFO HostContext] Well known config file 'MigratedRunner': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.runner_migrated'
+[2025-06-03 16:16:43Z INFO ConfigurationStore] MigratedConfigFilePath: /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.runner_migrated
+[2025-06-03 16:16:43Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:43Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:43Z INFO HostContext] Well known config file 'Credentials': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials'
+[2025-06-03 16:16:43Z INFO ConfigurationStore] CredFilePath: /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials
+[2025-06-03 16:16:43Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:43Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:43Z INFO HostContext] Well known config file 'MigratedCredentials': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_migrated'
+[2025-06-03 16:16:43Z INFO ConfigurationStore] MigratedCredFilePath: /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_migrated
+[2025-06-03 16:16:43Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:43Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:43Z INFO HostContext] Well known config file 'Service': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.service'
+[2025-06-03 16:16:43Z INFO ConfigurationStore] ServiceConfigFilePath: /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.service
+[2025-06-03 16:16:43Z INFO ConfigurationStore] Read setting file: 324 chars
+[2025-06-03 16:16:43Z INFO JobRunner] Initializing launch client
+[2025-06-03 16:16:43Z INFO JobServerQueue] Initializing results client
+[2025-06-03 16:16:45Z INFO ResultServer] Creating websocket client ...wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock
+[2025-06-03 16:16:45Z INFO ResultServer] Attempting to start websocket client with delay 00:00:00.
+[2025-06-03 16:16:45Z INFO JobServerQueue] Start process web console line queue.
+[2025-06-03 16:16:45Z INFO JobServerQueue] Start process file upload queue.
+[2025-06-03 16:16:45Z INFO JobServerQueue] Start results file upload queue.
+[2025-06-03 16:16:45Z INFO JobServerQueue] Starting results-based upload queue...
+[2025-06-03 16:16:45Z INFO JobServerQueue] Start process timeline update queue.
+[2025-06-03 16:16:45Z INFO ExecutionContext] Initializing Job context
+[2025-06-03 16:16:45Z INFO ExecutionContext] Initialize GitHub context
+[2025-06-03 16:16:45Z INFO ExecutionContext] Initialize Env context
+[2025-06-03 16:16:45Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:45Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:45Z INFO HostContext] Well known directory 'Diag': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_diag'
+[2025-06-03 16:16:45Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:45Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:45Z INFO HostContext] Well known directory 'Diag': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_diag'
+[2025-06-03 16:16:45Z INFO JobRunner] Starting the job execution context.
+[2025-06-03 16:16:45Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:45Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:45Z INFO HostContext] Well known directory 'Work': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work'
+[2025-06-03 16:16:45Z INFO JobRunner] Validating directory permissions for: '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work'
+[2025-06-03 16:16:45Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:45Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:45Z INFO HostContext] Well known directory 'Work': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work'
+[2025-06-03 16:16:45Z INFO HostContext] Well known directory 'Tools': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_tool'
+[2025-06-03 16:16:45Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:45Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:45Z INFO HostContext] Well known directory 'Work': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work'
+[2025-06-03 16:16:45Z INFO HostContext] Well known directory 'Temp': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_temp'
+[2025-06-03 16:16:46Z INFO JobServerQueue] Job timeline record has been updated for the first time.
+[2025-06-03 16:16:46Z INFO JobRunner] Getting job extension.
+[2025-06-03 16:16:46Z INFO JobRunner] Initialize job. Getting all job steps.
+[2025-06-03 16:16:46Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:46Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:46Z INFO HostContext] Well known directory 'Diag': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_diag'
+[2025-06-03 16:16:46Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:46Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:46Z INFO HostContext] Well known directory 'Diag': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_diag'
+[2025-06-03 16:16:46Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:46Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:46Z INFO HostContext] Well known config file 'Credentials': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials'
+[2025-06-03 16:16:46Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:46Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:46Z INFO HostContext] Well known config file 'SetupInfo': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.setup_info'
+[2025-06-03 16:16:46Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:46Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:46Z INFO HostContext] Well known directory 'Work': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work'
+[2025-06-03 16:16:46Z INFO PipelineDirectoryManager] Loading tracking config if exists: /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_PipelineMapping/Okumraymond/cipipelinewithgithubactions/PipelineFolder.json
+[2025-06-03 16:16:46Z INFO PipelineDirectoryManager] Creating a new tracking config file.
+[2025-06-03 16:16:46Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:46Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:46Z INFO HostContext] Well known directory 'Work': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work'
+[2025-06-03 16:16:46Z INFO PipelineDirectoryManager] Creating pipeline directory.
+[2025-06-03 16:16:46Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:46Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:46Z INFO HostContext] Well known directory 'Work': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work'
+[2025-06-03 16:16:46Z INFO PipelineDirectoryManager] Creating workspace directory.
+[2025-06-03 16:16:46Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:46Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:46Z INFO HostContext] Well known directory 'Work': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work'
+[2025-06-03 16:16:46Z INFO JobExtension] Downloading actions
+[2025-06-03 16:16:46Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:46Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:46Z INFO HostContext] Well known directory 'Work': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work'
+[2025-06-03 16:16:46Z INFO HostContext] Well known directory 'Actions': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_actions'
+[2025-06-03 16:16:46Z INFO Worker] Listening for cancel message from the channel.
+[2025-06-03 16:16:46Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2025-06-03 16:16:47Z INFO ResultServer] Successfully started websocket client.
+[2025-06-03 16:16:47Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3b13ef3e-3e43-46de-ba12-14953936180b', success rate: 1/1.
+[2025-06-03 16:16:47Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:47Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:47Z INFO HostContext] Well known directory 'Work': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work'
+[2025-06-03 16:16:47Z INFO HostContext] Well known directory 'Actions': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_actions'
+[2025-06-03 16:16:47Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:47Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:47Z INFO HostContext] Well known directory 'Work': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work'
+[2025-06-03 16:16:47Z INFO HostContext] Well known directory 'Actions': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_actions'
+[2025-06-03 16:16:47Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/checkout/tarball/f43a0e5ff2bd294095638e18286ca9a3d1956744' into /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_actions/_temp_0982d7ec-3608-4c8b-b2c2-57f14a360574/d69464a3-92d9-41b0-a844-2d5eafee4da9.tar.gz.
+[2025-06-03 16:16:47Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3b13ef3e-3e43-46de-ba12-14953936180b', success rate: 1/1.
+[2025-06-03 16:16:51Z INFO ActionManager] Request URL: https://api.github.com/repos/actions/checkout/tarball/f43a0e5ff2bd294095638e18286ca9a3d1956744 X-GitHub-Request-Id: DB6D:19D050:765F2:8812A:683F1FF1 Http Status: OK
+[2025-06-03 16:16:51Z INFO ActionManager] Which2: 'tar'
+[2025-06-03 16:16:51Z INFO ActionManager] Location: '/usr/bin/tar'
+[2025-06-03 16:16:51Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-03 16:16:51Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/tar'
+[2025-06-03 16:16:51Z INFO ProcessInvokerWrapper]   Arguments: '-xzf "/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_actions/_temp_0982d7ec-3608-4c8b-b2c2-57f14a360574/d69464a3-92d9-41b0-a844-2d5eafee4da9.tar.gz"'
+[2025-06-03 16:16:51Z INFO ProcessInvokerWrapper]   Working directory: '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_actions/_temp_0982d7ec-3608-4c8b-b2c2-57f14a360574/_staging'
+[2025-06-03 16:16:51Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-03 16:16:51Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-06-03 16:16:51Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-03 16:16:51Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-03 16:16:51Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-06-03 16:16:51Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-03 16:16:51Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-03 16:16:51Z INFO ProcessInvokerWrapper] Process started with process id 20142, waiting for process exit.
+[2025-06-03 16:16:51Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:16:51Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:16:51Z INFO ProcessInvokerWrapper] Finished process 20142 with exit code 0, and elapsed time 00:00:00.0734536.
+[2025-06-03 16:16:51Z INFO ActionManager] Finished getting action repository.
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Work': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Actions': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_actions'
+[2025-06-03 16:16:51Z INFO ActionManifestManager] Load schema file with definitions: [
+  "null",
+  "boolean",
+  "number",
+  "string",
+  "sequence",
+  "mapping",
+  "any",
+  "action-root",
+  "inputs",
+  "input",
+  "outputs",
+  "output-definition",
+  "runs",
+  "container-runs",
+  "container-runs-args",
+  "container-runs-env",
+  "node-runs",
+  "plugin-runs",
+  "composite-runs",
+  "composite-steps",
+  "composite-step",
+  "run-step",
+  "uses-step",
+  "container-runs-context",
+  "output-value",
+  "input-default-context",
+  "non-empty-string",
+  "string-steps-context",
+  "boolean-steps-context",
+  "step-env",
+  "step-if",
+  "step-with"
+]
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Work': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Actions': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_actions'
+[2025-06-03 16:16:51Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 67,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 68,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node16",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-06-03 16:16:51Z INFO ActionManager] Action node.js file: dist/index.js, no more preparation.
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Work': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Actions': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_actions'
+[2025-06-03 16:16:51Z INFO ActionManager] Load action that reference repository from '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_actions/actions/checkout/v3'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Work': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Actions': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_actions'
+[2025-06-03 16:16:51Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 67,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 68,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node16",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-06-03 16:16:51Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-06-03 16:16:51Z INFO ActionManager] Action node.js file: dist/index.js.
+[2025-06-03 16:16:51Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2025-06-03 16:16:51Z INFO JobExtension] Adding .
+[2025-06-03 16:16:51Z INFO JobExtension] Adding .
+[2025-06-03 16:16:51Z INFO JobExtension] Adding .
+[2025-06-03 16:16:51Z INFO JobExtension] Adding .
+[2025-06-03 16:16:51Z INFO JobExtension] Adding .
+[2025-06-03 16:16:51Z INFO JobExtension] Adding .
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Diag': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_diag'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Diag': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_diag'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Diag': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_diag'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Diag': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_diag'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Diag': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_diag'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Diag': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_diag'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Diag': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_diag'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Diag': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_diag'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Diag': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_diag'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Diag': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_diag'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Diag': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_diag'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:51Z INFO HostContext] Well known directory 'Diag': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_diag'
+[2025-06-03 16:16:51Z INFO JobExtension] Total accessible running process: 387.
+[2025-06-03 16:16:51Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3b13ef3e-3e43-46de-ba12-14953936180b', success rate: 1/1.
+[2025-06-03 16:16:52Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:52Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:52Z INFO HostContext] Well known directory 'Work': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work'
+[2025-06-03 16:16:52Z INFO JobExtension] Start checking service connectivity in background.
+[2025-06-03 16:16:52Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "setup_job",
+  "type": "runner",
+  "stage": "Pre",
+  "stepId": "3b13ef3e-3e43-46de-ba12-14953936180b",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 7,
+  "startTime": "2025-06-03T16:16:46.367402Z",
+  "finishTime": "2025-06-03T16:16:52.538851Z"
+}.
+[2025-06-03 16:16:52Z INFO JobRunner] Total job steps: 6.
+[2025-06-03 16:16:52Z INFO JobRunner] Run all job steps.
+[2025-06-03 16:16:52Z INFO StepsRunner] Processing step: DisplayName='Checkout code'
+[2025-06-03 16:16:52Z INFO StepsRunner] Evaluating: success()
+[2025-06-03 16:16:52Z INFO StepsRunner] Result: true
+[2025-06-03 16:16:52Z INFO StepsRunner] Starting the step.
+[2025-06-03 16:16:52Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:52Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:52Z INFO HostContext] Well known directory 'Work': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work'
+[2025-06-03 16:16:52Z INFO HostContext] Well known directory 'Actions': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_actions'
+[2025-06-03 16:16:52Z INFO ActionManager] Load action that reference repository from '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_actions/actions/checkout/v3'
+[2025-06-03 16:16:52Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:52Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:52Z INFO HostContext] Well known directory 'Work': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work'
+[2025-06-03 16:16:52Z INFO HostContext] Well known directory 'Actions': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_actions'
+[2025-06-03 16:16:52Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 67,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 68,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node16",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-06-03 16:16:52Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-06-03 16:16:52Z INFO ActionManager] Action node.js file: dist/index.js.
+[2025-06-03 16:16:52Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2025-06-03 16:16:52Z INFO ExecutionContext] Reserve record order 8 to 14 for post job actions.
+[2025-06-03 16:16:52Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:52Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:52Z INFO HostContext] Well known directory 'Diag': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_diag'
+[2025-06-03 16:16:52Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:52Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:52Z INFO HostContext] Well known directory 'Diag': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_diag'
+[2025-06-03 16:16:52Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:52Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:52Z INFO HostContext] Well known directory 'Work': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work'
+[2025-06-03 16:16:52Z INFO HostContext] Well known directory 'Temp': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_temp'
+[2025-06-03 16:16:52Z INFO ExecutionContext] Write event payload to /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_temp/_github_workflow/event.json
+[2025-06-03 16:16:52Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:52Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:52Z INFO HostContext] Well known directory 'Work': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work'
+[2025-06-03 16:16:52Z INFO HostContext] Well known directory 'Temp': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_temp'
+[2025-06-03 16:16:52Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-06-03 16:16:52Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathFileCommand, Runner.Worker
+[2025-06-03 16:16:52Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvFileCommand, Runner.Worker
+[2025-06-03 16:16:52Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.CreateStepSummaryCommand, Runner.Worker
+[2025-06-03 16:16:52Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateFileCommand, Runner.Worker
+[2025-06-03 16:16:52Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputFileCommand, Runner.Worker
+[2025-06-03 16:16:52Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "Okumraymond/cipipelinewithgithubactions"
+}
+[2025-06-03 16:16:52Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2025-06-03 16:16:52Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2025-06-03 16:16:52Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2025-06-03 16:16:52Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2025-06-03 16:16:52Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2025-06-03 16:16:52Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 50,
+  "col": 14,
+  "lit": "true"
+}
+[2025-06-03 16:16:52Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2025-06-03 16:16:52Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 55,
+  "col": 14,
+  "lit": "true"
+}
+[2025-06-03 16:16:52Z INFO ActionManifestManager] Input 'sparse-checkout': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 60,
+  "col": 14,
+  "lit": ""
+}
+[2025-06-03 16:16:52Z INFO ActionManifestManager] Input 'sparse-checkout-cone-mode': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 64,
+  "col": 14,
+  "lit": "true"
+}
+[2025-06-03 16:16:52Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 67,
+  "col": 14,
+  "lit": "1"
+}
+[2025-06-03 16:16:52Z INFO ActionManifestManager] Input 'fetch-tags': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 70,
+  "col": 14,
+  "lit": "false"
+}
+[2025-06-03 16:16:52Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "false"
+}
+[2025-06-03 16:16:52Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 82,
+  "col": 14,
+  "lit": "false"
+}
+[2025-06-03 16:16:52Z INFO ActionManifestManager] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 85,
+  "col": 14,
+  "lit": "true"
+}
+[2025-06-03 16:16:52Z INFO ActionManifestManager] Input 'github-server-url': default value evaluate result: ""
+[2025-06-03 16:16:52Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-06-03 16:16:52Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.InternalPluginSetRepoPathCommandExtension, Runner.Worker
+[2025-06-03 16:16:52Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvCommandExtension, Runner.Worker
+[2025-06-03 16:16:52Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputCommandExtension, Runner.Worker
+[2025-06-03 16:16:52Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateCommandExtension, Runner.Worker
+[2025-06-03 16:16:52Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathCommandExtension, Runner.Worker
+[2025-06-03 16:16:52Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMaskCommandExtension, Runner.Worker
+[2025-06-03 16:16:52Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMatcherCommandExtension, Runner.Worker
+[2025-06-03 16:16:52Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.RemoveMatcherCommandExtension, Runner.Worker
+[2025-06-03 16:16:52Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.WarningCommandExtension, Runner.Worker
+[2025-06-03 16:16:52Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.ErrorCommandExtension, Runner.Worker
+[2025-06-03 16:16:52Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.NoticeCommandExtension, Runner.Worker
+[2025-06-03 16:16:52Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.DebugCommandExtension, Runner.Worker
+[2025-06-03 16:16:52Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.GroupCommandExtension, Runner.Worker
+[2025-06-03 16:16:52Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EndGroupCommandExtension, Runner.Worker
+[2025-06-03 16:16:52Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EchoCommandExtension, Runner.Worker
+[2025-06-03 16:16:52Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-06-03 16:16:52Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-06-03 16:16:52Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-06-03 16:16:52Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-06-03 16:16:52Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-06-03 16:16:52Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-06-03 16:16:52Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-06-03 16:16:52Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-06-03 16:16:52Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-06-03 16:16:52Z INFO ActionCommandManager] Register action command extension for command error
+[2025-06-03 16:16:52Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-06-03 16:16:52Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-06-03 16:16:52Z INFO ActionCommandManager] Register action command extension for command group
+[2025-06-03 16:16:52Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-06-03 16:16:52Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-06-03 16:16:52Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:52Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:16:52Z INFO HostContext] Well known directory 'Externals': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/externals'
+[2025-06-03 16:16:52Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-03 16:16:52Z INFO ProcessInvokerWrapper]   File name: '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/externals/node20/bin/node'
+[2025-06-03 16:16:52Z INFO ProcessInvokerWrapper]   Arguments: '"/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_actions/actions/checkout/v3/dist/index.js"'
+[2025-06-03 16:16:52Z INFO ProcessInvokerWrapper]   Working directory: '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/cipipelinewithgithubactions/cipipelinewithgithubactions'
+[2025-06-03 16:16:52Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-03 16:16:52Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-06-03 16:16:52Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-03 16:16:52Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-03 16:16:52Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-06-03 16:16:52Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-03 16:16:52Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-03 16:16:52Z INFO ProcessInvokerWrapper] Process started with process id 20157, waiting for process exit.
+[2025-06-03 16:16:52Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:16:52Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-06-03 16:16:52Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_diag/blocks/88ddc307-0a28-4ed1-8e92-1806e9b65f38_3b13ef3e-3e43-46de-ba12-14953936180b.1
+[2025-06-03 16:16:52Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2025-06-03 16:16:54Z INFO AddMaskCommandExtension] Add new secret mask with length of 76
+[2025-06-03 16:16:54Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:16:56Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:16:57Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2025-06-03 16:16:57Z INFO JobServerQueue] Try to append 3 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 3/3.
+[2025-06-03 16:16:58Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:16:59Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:00Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:01Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:02Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:17:02Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:17:02Z INFO HostContext] Well known directory 'Work': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work'
+[2025-06-03 16:17:03Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:04Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:05Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:06Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:07Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:08Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:09Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:10Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:10Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:12Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:12Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:17:12Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:17:12Z INFO HostContext] Well known directory 'Work': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work'
+[2025-06-03 16:17:13Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:14Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:15Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:16Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:17Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:18Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:19Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:20Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:20Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:22Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:22Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:17:22Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:17:22Z INFO HostContext] Well known directory 'Work': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work'
+[2025-06-03 16:17:23Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:24Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:25Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:26Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:27Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:28Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:29Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:30Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:31Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:31Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:32Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:17:32Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:17:32Z INFO HostContext] Well known directory 'Work': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work'
+[2025-06-03 16:17:32Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:33Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:34Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:36Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:37Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:38Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:39Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:40Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:41Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:41Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:42Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:17:42Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:17:42Z INFO HostContext] Well known directory 'Work': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work'
+[2025-06-03 16:17:42Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:43Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:44Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:45Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:46Z INFO JobServerQueue] Stop aggressive process web console line queue.
+[2025-06-03 16:17:46Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:47Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:48Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:49Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:50Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:50Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:51Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:52Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:17:52Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:17:52Z INFO HostContext] Well known directory 'Work': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work'
+[2025-06-03 16:17:53Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:54Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:55Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:55Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:57Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:57Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:58Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:17:59Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:18:00Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:18:01Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:18:01Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:18:02Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:18:02Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:18:02Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:02Z INFO HostContext] Well known directory 'Work': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work'
+[2025-06-03 16:18:03Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:18:04Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:18:05Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:18:06Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:18:07Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:18:08Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:18:09Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:18:10Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:18:11Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:18:12Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:18:12Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:18:12Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:12Z INFO HostContext] Well known directory 'Work': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work'
+[2025-06-03 16:18:13Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:18:14Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:18:14Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:18:15Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:18:15Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:18:16Z INFO JobServerQueue] Try to append 2 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 2/2.
+[2025-06-03 16:18:17Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:18:18Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:18:18Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:18:19Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:18:19Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:19Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:19Z INFO ProcessInvokerWrapper] Finished process 20157 with exit code 0, and elapsed time 00:01:27.3002266.
+[2025-06-03 16:18:19Z INFO CreateStepSummaryCommand] Step Summary file (/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_temp/_runner_file_commands/step_summary_47606298-4242-451f-a450-a5f231722986) is empty; skipping attachment upload
+[2025-06-03 16:18:19Z INFO StepsRunner] Step result: 
+[2025-06-03 16:18:19Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v3",
+  "type": "node20",
+  "stage": "Main",
+  "stepId": "d4432d2b-8d9f-4a2c-ae82-f39d3d05895c",
+  "stepContextName": "__actions_checkout",
+  "hasPreStep": false,
+  "hasPostStep": true,
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 88,
+  "startTime": "2025-06-03T16:16:52.553363Z",
+  "finishTime": "2025-06-03T16:18:19.929722Z"
+}.
+[2025-06-03 16:18:19Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-06-03 16:18:19Z INFO StepsRunner] Current state: job state = ''
+[2025-06-03 16:18:19Z INFO StepsRunner] Processing step: DisplayName='Build API'
+[2025-06-03 16:18:19Z INFO StepsRunner] Evaluating: success()
+[2025-06-03 16:18:19Z INFO StepsRunner] Result: true
+[2025-06-03 16:18:19Z INFO StepsRunner] Starting the step.
+[2025-06-03 16:18:19Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:18:19Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:19Z INFO HostContext] Well known directory 'Work': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work'
+[2025-06-03 16:18:19Z INFO HostContext] Well known directory 'Temp': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_temp'
+[2025-06-03 16:18:19Z INFO ExecutionContext] Write event payload to /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_temp/_github_workflow/event.json
+[2025-06-03 16:18:19Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:18:19Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:19Z INFO HostContext] Well known directory 'Work': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work'
+[2025-06-03 16:18:19Z INFO HostContext] Well known directory 'Temp': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_temp'
+[2025-06-03 16:18:19Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-06-03 16:18:19Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-06-03 16:18:19Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-06-03 16:18:19Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-06-03 16:18:19Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-06-03 16:18:19Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-06-03 16:18:19Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-06-03 16:18:19Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-06-03 16:18:19Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-06-03 16:18:19Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-06-03 16:18:19Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-06-03 16:18:19Z INFO ActionCommandManager] Register action command extension for command error
+[2025-06-03 16:18:19Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-06-03 16:18:19Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-06-03 16:18:19Z INFO ActionCommandManager] Register action command extension for command group
+[2025-06-03 16:18:19Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-06-03 16:18:19Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-06-03 16:18:19Z INFO ScriptHandler] Which2: 'bash'
+[2025-06-03 16:18:19Z INFO ScriptHandler] Location: '/bin/bash'
+[2025-06-03 16:18:19Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:18:19Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:19Z INFO HostContext] Well known directory 'Work': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work'
+[2025-06-03 16:18:19Z INFO HostContext] Well known directory 'Temp': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_temp'
+[2025-06-03 16:18:19Z INFO ScriptHandler] Which2: 'bash'
+[2025-06-03 16:18:19Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd4432d2b-8d9f-4a2c-ae82-f39d3d05895c', success rate: 1/1.
+[2025-06-03 16:18:19Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'e6a0d9f8-701b-4864-bf40-ed9cdcaea78d', success rate: 1/1.
+[2025-06-03 16:18:19Z INFO ScriptHandler] Location: '/bin/bash'
+[2025-06-03 16:18:19Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-03 16:18:19Z INFO ProcessInvokerWrapper]   File name: '/bin/bash'
+[2025-06-03 16:18:19Z INFO ProcessInvokerWrapper]   Arguments: '-e /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_temp/86f6fff2-8589-4544-bd28-971382005bf7.sh'
+[2025-06-03 16:18:19Z INFO ProcessInvokerWrapper]   Working directory: '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/cipipelinewithgithubactions/cipipelinewithgithubactions'
+[2025-06-03 16:18:19Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-03 16:18:19Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-06-03 16:18:19Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-03 16:18:19Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-03 16:18:19Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-06-03 16:18:19Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-03 16:18:19Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-03 16:18:19Z INFO ProcessInvokerWrapper] Process started with process id 20596, waiting for process exit.
+[2025-06-03 16:18:20Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-06-03 16:18:20Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_diag/blocks/88ddc307-0a28-4ed1-8e92-1806e9b65f38_d4432d2b-8d9f-4a2c-ae82-f39d3d05895c.1
+[2025-06-03 16:18:20Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'e6a0d9f8-701b-4864-bf40-ed9cdcaea78d', success rate: 1/1.
+[2025-06-03 16:18:20Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2025-06-03 16:18:21Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:21Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'e6a0d9f8-701b-4864-bf40-ed9cdcaea78d', success rate: 1/1.
+[2025-06-03 16:18:21Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:21Z INFO ProcessInvokerWrapper] Finished process 20596 with exit code 2, and elapsed time 00:00:01.5198370.
+[2025-06-03 16:18:21Z INFO CreateStepSummaryCommand] Step Summary file (/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_temp/_runner_file_commands/step_summary_909b178b-e6f1-4edc-b27b-ebe4c7b9c6c7) is empty; skipping attachment upload
+[2025-06-03 16:18:21Z INFO StepsRunner] Step result: Failed
+[2025-06-03 16:18:21Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "sh",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "e6a0d9f8-701b-4864-bf40-ed9cdcaea78d",
+  "stepContextName": "__run",
+  "result": "failed",
+  "errorMessages": [
+    "Process completed with exit code 2."
+  ],
+  "executionTimeInSeconds": 2,
+  "startTime": "2025-06-03T16:18:19.931644Z",
+  "finishTime": "2025-06-03T16:18:21.494101Z"
+}.
+[2025-06-03 16:18:21Z INFO StepsRunner] Update job result with current step result 'Failed'.
+[2025-06-03 16:18:21Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-06-03 16:18:21Z INFO StepsRunner] Processing step: DisplayName='Run tests'
+[2025-06-03 16:18:21Z INFO StepsRunner] Evaluating: success()
+[2025-06-03 16:18:21Z INFO StepsRunner] Result: false
+[2025-06-03 16:18:21Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2025-06-03 16:18:21Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2025-06-03 16:18:21Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-06-03 16:18:21Z INFO StepsRunner] Processing step: DisplayName='Perform code linting'
+[2025-06-03 16:18:21Z INFO StepsRunner] Evaluating: success()
+[2025-06-03 16:18:21Z INFO StepsRunner] Result: false
+[2025-06-03 16:18:21Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2025-06-03 16:18:21Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2025-06-03 16:18:21Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-06-03 16:18:21Z INFO StepsRunner] Processing step: DisplayName='Login to Docker Registry'
+[2025-06-03 16:18:21Z INFO StepsRunner] Evaluating: success()
+[2025-06-03 16:18:21Z INFO StepsRunner] Result: false
+[2025-06-03 16:18:21Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2025-06-03 16:18:21Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2025-06-03 16:18:21Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-06-03 16:18:21Z INFO StepsRunner] Processing step: DisplayName='Build and push Docker image'
+[2025-06-03 16:18:21Z INFO StepsRunner] Evaluating: success()
+[2025-06-03 16:18:21Z INFO StepsRunner] Result: false
+[2025-06-03 16:18:21Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2025-06-03 16:18:21Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2025-06-03 16:18:21Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-06-03 16:18:21Z INFO StepsRunner] Processing step: DisplayName='Post Checkout code'
+[2025-06-03 16:18:21Z INFO StepsRunner] Evaluating: always()
+[2025-06-03 16:18:21Z INFO StepsRunner] Result: true
+[2025-06-03 16:18:21Z INFO StepsRunner] Starting the step.
+[2025-06-03 16:18:21Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:18:21Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:21Z INFO HostContext] Well known directory 'Work': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work'
+[2025-06-03 16:18:21Z INFO HostContext] Well known directory 'Actions': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_actions'
+[2025-06-03 16:18:21Z INFO ActionManager] Load action that reference repository from '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_actions/actions/checkout/v3'
+[2025-06-03 16:18:21Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:18:21Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:21Z INFO HostContext] Well known directory 'Work': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work'
+[2025-06-03 16:18:21Z INFO HostContext] Well known directory 'Actions': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_actions'
+[2025-06-03 16:18:21Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 67,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 68,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node16",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-06-03 16:18:21Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-06-03 16:18:21Z INFO ActionManager] Action node.js file: dist/index.js.
+[2025-06-03 16:18:21Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2025-06-03 16:18:21Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:18:21Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:21Z INFO HostContext] Well known directory 'Work': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work'
+[2025-06-03 16:18:21Z INFO HostContext] Well known directory 'Temp': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_temp'
+[2025-06-03 16:18:21Z INFO ExecutionContext] Write event payload to /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_temp/_github_workflow/event.json
+[2025-06-03 16:18:21Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:18:21Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:21Z INFO HostContext] Well known directory 'Work': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work'
+[2025-06-03 16:18:21Z INFO HostContext] Well known directory 'Temp': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_temp'
+[2025-06-03 16:18:21Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-06-03 16:18:21Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "Okumraymond/cipipelinewithgithubactions"
+}
+[2025-06-03 16:18:21Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2025-06-03 16:18:21Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2025-06-03 16:18:21Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2025-06-03 16:18:21Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2025-06-03 16:18:21Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2025-06-03 16:18:21Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 50,
+  "col": 14,
+  "lit": "true"
+}
+[2025-06-03 16:18:21Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2025-06-03 16:18:21Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 55,
+  "col": 14,
+  "lit": "true"
+}
+[2025-06-03 16:18:21Z INFO ActionManifestManager] Input 'sparse-checkout': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 60,
+  "col": 14,
+  "lit": ""
+}
+[2025-06-03 16:18:21Z INFO ActionManifestManager] Input 'sparse-checkout-cone-mode': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 64,
+  "col": 14,
+  "lit": "true"
+}
+[2025-06-03 16:18:21Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 67,
+  "col": 14,
+  "lit": "1"
+}
+[2025-06-03 16:18:21Z INFO ActionManifestManager] Input 'fetch-tags': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 70,
+  "col": 14,
+  "lit": "false"
+}
+[2025-06-03 16:18:21Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "false"
+}
+[2025-06-03 16:18:21Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 82,
+  "col": 14,
+  "lit": "false"
+}
+[2025-06-03 16:18:21Z INFO ActionManifestManager] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 85,
+  "col": 14,
+  "lit": "true"
+}
+[2025-06-03 16:18:21Z INFO ActionManifestManager] Input 'github-server-url': default value evaluate result: ""
+[2025-06-03 16:18:21Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-06-03 16:18:21Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-06-03 16:18:21Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-06-03 16:18:21Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-06-03 16:18:21Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-06-03 16:18:21Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-06-03 16:18:21Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-06-03 16:18:21Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-06-03 16:18:21Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-06-03 16:18:21Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-06-03 16:18:21Z INFO ActionCommandManager] Register action command extension for command error
+[2025-06-03 16:18:21Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-06-03 16:18:21Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-06-03 16:18:21Z INFO ActionCommandManager] Register action command extension for command group
+[2025-06-03 16:18:21Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-06-03 16:18:21Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-06-03 16:18:21Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:18:21Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:21Z INFO HostContext] Well known directory 'Externals': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/externals'
+[2025-06-03 16:18:21Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-03 16:18:21Z INFO ProcessInvokerWrapper]   File name: '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/externals/node20/bin/node'
+[2025-06-03 16:18:21Z INFO ProcessInvokerWrapper]   Arguments: '"/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_actions/actions/checkout/v3/dist/index.js"'
+[2025-06-03 16:18:21Z INFO ProcessInvokerWrapper]   Working directory: '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/cipipelinewithgithubactions/cipipelinewithgithubactions'
+[2025-06-03 16:18:21Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-03 16:18:21Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-06-03 16:18:21Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-03 16:18:21Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-03 16:18:21Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-06-03 16:18:21Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-03 16:18:21Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-03 16:18:21Z INFO ProcessInvokerWrapper] Process started with process id 20779, waiting for process exit.
+[2025-06-03 16:18:21Z INFO AddMaskCommandExtension] Add new secret mask with length of 32
+[2025-06-03 16:18:21Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2025-06-03 16:18:21Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'e6a0d9f8-701b-4864-bf40-ed9cdcaea78d', success rate: 1/1.
+[2025-06-03 16:18:21Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56008cd6-6b64-4ee8-8462-ee4dba478858', success rate: 1/1.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Finished process 20779 with exit code 0, and elapsed time 00:00:00.9170215.
+[2025-06-03 16:18:22Z INFO CreateStepSummaryCommand] Step Summary file (/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_temp/_runner_file_commands/step_summary_eb86520f-c57e-42f6-b375-8ce1fc9179b6) is empty; skipping attachment upload
+[2025-06-03 16:18:22Z INFO StepsRunner] Step result: 
+[2025-06-03 16:18:22Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v3",
+  "type": "node20",
+  "stage": "Post",
+  "stepId": "56008cd6-6b64-4ee8-8462-ee4dba478858",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2025-06-03T16:18:21.500263Z",
+  "finishTime": "2025-06-03T16:18:22.437015Z"
+}.
+[2025-06-03 16:18:22Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-06-03 16:18:22Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-06-03 16:18:22Z INFO JobRunner] Finalize job.
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Diag': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_diag'
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Diag': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_diag'
+[2025-06-03 16:18:22Z INFO JobExtension] Initialize Env context
+[2025-06-03 16:18:22Z INFO JobExtension] Initialize steps context
+[2025-06-03 16:18:22Z INFO JobExtension] Total accessible running process: 388.
+[2025-06-03 16:18:22Z INFO JobExtension] Inspecting process environment variables. PID: 20658 (mdworker_shared)
+[2025-06-03 16:18:22Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 20658 -o command`
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 20658 -o command'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Working directory: '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Process started with process id 20858, waiting for process exit.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:22Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56008cd6-6b64-4ee8-8462-ee4dba478858', success rate: 1/1.
+[2025-06-03 16:18:22Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'af907951-7b80-409e-9930-2c10628cf197', success rate: 1/1.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Finished process 20858 with exit code 0, and elapsed time 00:00:00.0332294.
+[2025-06-03 16:18:22Z INFO LinuxProcessExtensions] Successfully dump environment variables for 20658
+[2025-06-03 16:18:22Z INFO JobExtension] Inspecting process environment variables. PID: 20657 (mdworker_shared)
+[2025-06-03 16:18:22Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 20657 -o command`
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 20657 -o command'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Working directory: '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Process started with process id 20859, waiting for process exit.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Finished process 20859 with exit code 0, and elapsed time 00:00:00.0317064.
+[2025-06-03 16:18:22Z INFO LinuxProcessExtensions] Successfully dump environment variables for 20657
+[2025-06-03 16:18:22Z INFO JobExtension] Inspecting process environment variables. PID: 20656 (mdworker_shared)
+[2025-06-03 16:18:22Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 20656 -o command`
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 20656 -o command'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Working directory: '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Process started with process id 20860, waiting for process exit.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Finished process 20860 with exit code 0, and elapsed time 00:00:00.0159289.
+[2025-06-03 16:18:22Z INFO LinuxProcessExtensions] Successfully dump environment variables for 20656
+[2025-06-03 16:18:22Z INFO JobExtension] Inspecting process environment variables. PID: 20620 (mdworker_shared)
+[2025-06-03 16:18:22Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 20620 -o command`
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 20620 -o command'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Working directory: '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Work': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Process started with process id 20861, waiting for process exit.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Finished process 20861 with exit code 0, and elapsed time 00:00:00.0337851.
+[2025-06-03 16:18:22Z INFO LinuxProcessExtensions] Successfully dump environment variables for 20620
+[2025-06-03 16:18:22Z INFO JobExtension] Inspecting process environment variables. PID: 20618 (mdworker_shared)
+[2025-06-03 16:18:22Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 20618 -o command`
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 20618 -o command'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Working directory: '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Process started with process id 20862, waiting for process exit.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Finished process 20862 with exit code 0, and elapsed time 00:00:00.0133945.
+[2025-06-03 16:18:22Z INFO LinuxProcessExtensions] Successfully dump environment variables for 20618
+[2025-06-03 16:18:22Z INFO JobExtension] Inspecting process environment variables. PID: 20616 (mdworker_shared)
+[2025-06-03 16:18:22Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 20616 -o command`
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 20616 -o command'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Working directory: '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Process started with process id 20863, waiting for process exit.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Finished process 20863 with exit code 0, and elapsed time 00:00:00.0347168.
+[2025-06-03 16:18:22Z INFO LinuxProcessExtensions] Successfully dump environment variables for 20616
+[2025-06-03 16:18:22Z INFO JobExtension] Inspecting process environment variables. PID: 20615 (mdworker_shared)
+[2025-06-03 16:18:22Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 20615 -o command`
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 20615 -o command'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Working directory: '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Process started with process id 20864, waiting for process exit.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Finished process 20864 with exit code 0, and elapsed time 00:00:00.0338411.
+[2025-06-03 16:18:22Z INFO LinuxProcessExtensions] Successfully dump environment variables for 20615
+[2025-06-03 16:18:22Z INFO JobExtension] Inspecting process environment variables. PID: 20614 (mdworker_shared)
+[2025-06-03 16:18:22Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 20614 -o command`
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 20614 -o command'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Working directory: '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Process started with process id 20865, waiting for process exit.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Finished process 20865 with exit code 0, and elapsed time 00:00:00.0165458.
+[2025-06-03 16:18:22Z INFO LinuxProcessExtensions] Successfully dump environment variables for 20614
+[2025-06-03 16:18:22Z INFO JobExtension] Inspecting process environment variables. PID: 20603 (mdworker_shared)
+[2025-06-03 16:18:22Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 20603 -o command`
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 20603 -o command'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Working directory: '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Process started with process id 20866, waiting for process exit.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Finished process 20866 with exit code 0, and elapsed time 00:00:00.0319389.
+[2025-06-03 16:18:22Z INFO LinuxProcessExtensions] Successfully dump environment variables for 20603
+[2025-06-03 16:18:22Z INFO JobExtension] Inspecting process environment variables. PID: 20586 (mdworker_shared)
+[2025-06-03 16:18:22Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 20586 -o command`
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 20586 -o command'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Working directory: '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Process started with process id 20867, waiting for process exit.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Finished process 20867 with exit code 0, and elapsed time 00:00:00.0160507.
+[2025-06-03 16:18:22Z INFO LinuxProcessExtensions] Successfully dump environment variables for 20586
+[2025-06-03 16:18:22Z INFO JobExtension] Inspecting process environment variables. PID: 20585 (mdworker_shared)
+[2025-06-03 16:18:22Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 20585 -o command`
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 20585 -o command'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Working directory: '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Process started with process id 20868, waiting for process exit.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Finished process 20868 with exit code 0, and elapsed time 00:00:00.0370697.
+[2025-06-03 16:18:22Z INFO LinuxProcessExtensions] Successfully dump environment variables for 20585
+[2025-06-03 16:18:22Z INFO JobExtension] Inspecting process environment variables. PID: 20584 (mdworker_shared)
+[2025-06-03 16:18:22Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 20584 -o command`
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 20584 -o command'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Working directory: '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Process started with process id 20869, waiting for process exit.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Finished process 20869 with exit code 1, and elapsed time 00:00:00.0231687.
+[2025-06-03 16:18:22Z INFO JobExtension] Inspecting process environment variables. PID: 20580 (mdworker_shared)
+[2025-06-03 16:18:22Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 20580 -o command`
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 20580 -o command'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Working directory: '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-03 16:18:22Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Process started with process id 20870, waiting for process exit.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Finished process 20870 with exit code 0, and elapsed time 00:00:00.0243800.
+[2025-06-03 16:18:22Z INFO LinuxProcessExtensions] Successfully dump environment variables for 20580
+[2025-06-03 16:18:22Z INFO JobExtension] Inspecting process environment variables. PID: 20577 (mdworker_shared)
+[2025-06-03 16:18:22Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 20577 -o command`
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 20577 -o command'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Working directory: '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Process started with process id 20871, waiting for process exit.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Finished process 20871 with exit code 0, and elapsed time 00:00:00.0319384.
+[2025-06-03 16:18:22Z INFO LinuxProcessExtensions] Successfully dump environment variables for 20577
+[2025-06-03 16:18:22Z INFO JobExtension] Inspecting process environment variables. PID: 20576 (mdworker_shared)
+[2025-06-03 16:18:22Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 20576 -o command`
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 20576 -o command'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Working directory: '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Process started with process id 20872, waiting for process exit.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Finished process 20872 with exit code 0, and elapsed time 00:00:00.0388082.
+[2025-06-03 16:18:22Z INFO LinuxProcessExtensions] Successfully dump environment variables for 20576
+[2025-06-03 16:18:22Z INFO JobExtension] Inspecting process environment variables. PID: 20562 (mdworker_shared)
+[2025-06-03 16:18:22Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 20562 -o command`
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:18:22Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 20562 -o command'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Working directory: '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Process started with process id 20873, waiting for process exit.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:22Z INFO ProcessInvokerWrapper] Finished process 20873 with exit code 0, and elapsed time 00:00:00.0184051.
+[2025-06-03 16:18:22Z INFO LinuxProcessExtensions] Successfully dump environment variables for 20562
+[2025-06-03 16:18:22Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "complete_job",
+  "type": "runner",
+  "stage": "Post",
+  "stepId": "af907951-7b80-409e-9930-2c10628cf197",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2025-06-03T16:18:22.443353Z",
+  "finishTime": "2025-06-03T16:18:22.947755Z"
+}.
+[2025-06-03 16:18:22Z INFO JobRunner] Job result after all job steps finish: Failed
+[2025-06-03 16:18:22Z INFO JobRunner] Completing the job execution context.
+[2025-06-03 16:18:22Z INFO JobRunner] Shutting down the job server queue.
+[2025-06-03 16:18:22Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2025-06-03 16:18:23Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2025-06-03 16:18:24Z INFO JobServerQueue] All queue process task stopped.
+[2025-06-03 16:18:24Z INFO JobServerQueue] Web console line queue drained.
+[2025-06-03 16:18:24Z INFO JobServerQueue] Uploading 2 files in one shot.
+[2025-06-03 16:18:24Z INFO JobServerQueue] Try to upload 2 log files or attachments, success rate: 2/2.
+[2025-06-03 16:18:24Z INFO JobServerQueue] File upload queue drained.
+[2025-06-03 16:18:24Z INFO JobServerQueue] Starting results-based upload queue...
+[2025-06-03 16:18:24Z INFO JobServerQueue] Uploading 4 file(s) in one shot through results service.
+[2025-06-03 16:18:24Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-06-03 16:18:24Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_diag/blocks/88ddc307-0a28-4ed1-8e92-1806e9b65f38_e6a0d9f8-701b-4864-bf40-ed9cdcaea78d.1
+[2025-06-03 16:18:25Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-06-03 16:18:25Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_diag/blocks/88ddc307-0a28-4ed1-8e92-1806e9b65f38_56008cd6-6b64-4ee8-8462-ee4dba478858.1
+[2025-06-03 16:18:26Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-06-03 16:18:26Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_diag/blocks/88ddc307-0a28-4ed1-8e92-1806e9b65f38_af907951-7b80-409e-9930-2c10628cf197.1
+[2025-06-03 16:18:27Z INFO JobServerQueue] Got a job log file to send to results service.
+[2025-06-03 16:18:27Z INFO JobServerQueue] Starting upload of job log file to results service ResultsLog, /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_diag/blocks/88ddc307-0a28-4ed1-8e92-1806e9b65f38_a304a82b-f70e-56fd-9943-d4491315be6c.1
+[2025-06-03 16:18:27Z INFO JobServerQueue] Tried to upload 4 file(s) to results, success rate: 4/4.
+[2025-06-03 16:18:27Z INFO JobServerQueue] Results upload queue drained.
+[2025-06-03 16:18:28Z INFO JobServerQueue] Timeline update queue drained.
+[2025-06-03 16:18:28Z INFO JobServerQueue] Disposing job server ...
+[2025-06-03 16:18:28Z INFO JobServerQueue] Disposing results server ...
+[2025-06-03 16:18:28Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2025-06-03 16:18:28Z INFO TempDirectoryManager] Cleaning runner temp folder: /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_work/_temp
+[2025-06-03 16:18:28Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:18:28Z INFO HostContext] Well known directory 'Root': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner'
+[2025-06-03 16:18:28Z INFO HostContext] Well known directory 'Diag': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_diag'
+[2025-06-03 16:18:28Z INFO HostContext] Well known config file 'Telemetry': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/_diag/.telemetry'
+[2025-06-03 16:18:28Z INFO JobRunner] Raising job completed against run service
+[2025-06-03 16:18:29Z INFO Worker] Job completed.

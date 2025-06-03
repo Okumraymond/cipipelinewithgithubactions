@@ -11,6 +11,17 @@ jobs:
     runs-on: self-hosted # Uses your self-hosted runner
     
     steps:
+  - uses: actions/checkout@v4
+
+  - name: Set up Python
+    run: |
+      echo 'export PYENV_VERSION=3.11.9' >> $GITHUB_ENV  # Use a known working version
+      pyenv global 3.11.9
+      pip --version  # Verify pip is available
+
+  - name: Build
+    run: make build  # Now pip will work!
+
     - name: Checkout code
       uses: actions/checkout@v3
 

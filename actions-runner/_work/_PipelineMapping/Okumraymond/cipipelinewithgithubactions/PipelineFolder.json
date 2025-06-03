@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "Okumraymond/cipipelinewithgithubactions",
+  "pipelineDirectory": "cipipelinewithgithubactions",
+  "workspaceDirectory": "cipipelinewithgithubactions/cipipelinewithgithubactions",
+  "repositories": {
+    "Okumraymond/cipipelinewithgithubactions": {
+      "repositoryPath": "cipipelinewithgithubactions/cipipelinewithgithubactions",
+      "lastRunOn": "06/03/2025 17:16:46 +01:00"
+    }
+  },
+  "lastRunOn": "06/03/2025 17:16:46 +01:00"
+}

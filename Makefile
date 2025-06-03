@@ -2,6 +2,7 @@
 
 # Build the application
 build:
+	pyenv global 3.11.9
 	pip install -r requirements.txt
 
 # Run tests

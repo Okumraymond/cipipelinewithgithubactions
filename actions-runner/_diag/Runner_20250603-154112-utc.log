@@ -200,3 +200,431 @@
 [2025-06-03 15:50:36Z INFO CredentialManager] Creating type OAuth
 [2025-06-03 15:50:36Z INFO CredentialManager] Creating credential type: OAuth
 [2025-06-03 15:50:36Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 15:51:27Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 15:51:27Z INFO ConfigurationStore] stored True
+[2025-06-03 15:51:27Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 15:51:27Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 15:51:27Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 15:51:27Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 15:52:18Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 15:52:18Z INFO ConfigurationStore] stored True
+[2025-06-03 15:52:18Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 15:52:18Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 15:52:18Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 15:52:18Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 15:53:08Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 15:53:08Z INFO ConfigurationStore] stored True
+[2025-06-03 15:53:08Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 15:53:08Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 15:53:08Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 15:53:08Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 15:53:59Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 15:53:59Z INFO ConfigurationStore] stored True
+[2025-06-03 15:53:59Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 15:53:59Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 15:53:59Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 15:53:59Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 15:54:49Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 15:54:49Z INFO ConfigurationStore] stored True
+[2025-06-03 15:54:49Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 15:54:49Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 15:54:49Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 15:54:49Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 15:55:40Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 15:55:40Z INFO ConfigurationStore] stored True
+[2025-06-03 15:55:40Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 15:55:40Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 15:55:40Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 15:55:40Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 15:56:31Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 15:56:31Z INFO ConfigurationStore] stored True
+[2025-06-03 15:56:31Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 15:56:31Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 15:56:31Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 15:56:31Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 15:57:22Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 15:57:22Z INFO ConfigurationStore] stored True
+[2025-06-03 15:57:22Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 15:57:22Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 15:57:22Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 15:57:22Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 15:58:13Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 15:58:13Z INFO ConfigurationStore] stored True
+[2025-06-03 15:58:13Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 15:58:13Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 15:58:13Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 15:58:13Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 15:59:03Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 15:59:03Z INFO ConfigurationStore] stored True
+[2025-06-03 15:59:03Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 15:59:03Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 15:59:03Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 15:59:03Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 15:59:54Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 15:59:54Z INFO ConfigurationStore] stored True
+[2025-06-03 15:59:54Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 15:59:54Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 15:59:54Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 15:59:54Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:00:45Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:00:45Z INFO ConfigurationStore] stored True
+[2025-06-03 16:00:45Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:00:45Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:00:45Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:00:45Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:01:35Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:01:35Z INFO ConfigurationStore] stored True
+[2025-06-03 16:01:35Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:01:35Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:01:35Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:01:35Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:02:26Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:02:26Z INFO ConfigurationStore] stored True
+[2025-06-03 16:02:26Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:02:26Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:02:26Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:02:26Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:03:17Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:03:17Z INFO ConfigurationStore] stored True
+[2025-06-03 16:03:17Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:03:17Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:03:17Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:03:17Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:04:07Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:04:07Z INFO ConfigurationStore] stored True
+[2025-06-03 16:04:07Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:04:07Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:04:07Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:04:07Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:04:58Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:04:58Z INFO ConfigurationStore] stored True
+[2025-06-03 16:04:58Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:04:58Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:04:58Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:04:58Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:05:49Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:05:49Z INFO ConfigurationStore] stored True
+[2025-06-03 16:05:49Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:05:49Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:05:49Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:05:49Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:06:39Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:06:39Z INFO ConfigurationStore] stored True
+[2025-06-03 16:06:39Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:06:39Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:06:39Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:06:39Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:07:30Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:07:30Z INFO ConfigurationStore] stored True
+[2025-06-03 16:07:30Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:07:30Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:07:30Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:07:30Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:08:21Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:08:21Z INFO ConfigurationStore] stored True
+[2025-06-03 16:08:21Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:08:21Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:08:21Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:08:21Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:09:12Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:09:12Z INFO ConfigurationStore] stored True
+[2025-06-03 16:09:12Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:09:12Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:09:12Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:09:12Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:10:03Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:10:03Z INFO ConfigurationStore] stored True
+[2025-06-03 16:10:03Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:10:03Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:10:03Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:10:03Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:10:53Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:10:53Z INFO ConfigurationStore] stored True
+[2025-06-03 16:10:53Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:10:53Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:10:53Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:10:53Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:11:44Z INFO MessageListener] No message retrieved from session 'f00b9114-b44b-418d-ad0b-7db633aed61c' within last 30 minutes.
+[2025-06-03 16:11:44Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:11:44Z INFO ConfigurationStore] stored True
+[2025-06-03 16:11:44Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:11:44Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:11:44Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:11:44Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:12:35Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:12:35Z INFO ConfigurationStore] stored True
+[2025-06-03 16:12:35Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:12:35Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:12:35Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:12:35Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:13:25Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:13:25Z INFO ConfigurationStore] stored True
+[2025-06-03 16:13:25Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:13:25Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:13:25Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:13:25Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:14:16Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:14:16Z INFO ConfigurationStore] stored True
+[2025-06-03 16:14:16Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:14:16Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:14:16Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:14:16Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:15:07Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:15:07Z INFO ConfigurationStore] stored True
+[2025-06-03 16:15:07Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:15:07Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:15:07Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:15:07Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:15:58Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:15:58Z INFO ConfigurationStore] stored True
+[2025-06-03 16:15:58Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:15:58Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:15:58Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:15:58Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:16:37Z INFO MessageListener] Message '3796035814997364536' received from session 'f00b9114-b44b-418d-ad0b-7db633aed61c'.
+[2025-06-03 16:16:37Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:16:37Z INFO ConfigurationStore] stored True
+[2025-06-03 16:16:37Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:16:37Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:16:37Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:16:37Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:16:37Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:16:37Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:16:38Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-06-03 16:16:40Z INFO JobDispatcher] Job request 0 for plan 88ddc307-0a28-4ed1-8e92-1806e9b65f38 job a304a82b-f70e-56fd-9943-d4491315be6c received.
+[2025-06-03 16:16:40Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-06-03 16:16:40Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-06-03 16:16:40Z INFO Terminal] WRITE LINE: 2025-06-03 16:16:40Z: Running job: build-and-push
+[2025-06-03 16:16:40Z INFO JobDispatcher] Start renew job request 0 for job a304a82b-f70e-56fd-9943-d4491315be6c.
+[2025-06-03 16:16:41Z INFO JobDispatcher] Successfully renew job a304a82b-f70e-56fd-9943-d4491315be6c, job is valid till 6/3/2025 4:26:41 PM
+[2025-06-03 16:16:41Z INFO HostContext] Well known directory 'Bin': '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:41Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-03 16:16:41Z INFO ProcessInvokerWrapper]   File name: '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin/Runner.Worker'
+[2025-06-03 16:16:41Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 150 153'
+[2025-06-03 16:16:41Z INFO ProcessInvokerWrapper]   Working directory: '/Users/admin/Documents/Project/cicdpipeline/code/actions-runner/bin'
+[2025-06-03 16:16:41Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-03 16:16:41Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-06-03 16:16:41Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-06-03 16:16:41Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-03 16:16:41Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-06-03 16:16:41Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-03 16:16:41Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-06-03 16:16:41Z INFO ProcessInvokerWrapper] Process started with process id 20098, waiting for process exit.
+[2025-06-03 16:16:41Z INFO JobDispatcher] Send job request message to worker for job a304a82b-f70e-56fd-9943-d4491315be6c.
+[2025-06-03 16:16:41Z INFO ProcessChannel] Sending message of length 19342, with hash '5bd8ef2ec538b1585a96316aed8c0c7394bb4b6884275afec5567b4838d37dc9'
+[2025-06-03 16:16:41Z INFO JobNotification] Entering JobStarted Notification
+[2025-06-03 16:16:41Z INFO JobNotification] Entering StartMonitor
+[2025-06-03 16:16:42Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:16:42Z INFO ConfigurationStore] stored True
+[2025-06-03 16:16:42Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:16:42Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:16:42Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:16:42Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:17:36Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:17:36Z INFO ConfigurationStore] stored True
+[2025-06-03 16:17:36Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:17:36Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:17:36Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:17:36Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:17:43Z INFO JobDispatcher] Successfully renew job a304a82b-f70e-56fd-9943-d4491315be6c, job is valid till 6/3/2025 4:27:42 PM
+[2025-06-03 16:18:26Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:18:26Z INFO ConfigurationStore] stored True
+[2025-06-03 16:18:26Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:18:26Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:18:26Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:18:26Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:18:29Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:29Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-03 16:18:29Z INFO ProcessInvokerWrapper] Finished process 20098 with exit code 102, and elapsed time 00:01:47.3896213.
+[2025-06-03 16:18:29Z INFO JobDispatcher] Worker finished for job a304a82b-f70e-56fd-9943-d4491315be6c. Code: 102
+[2025-06-03 16:18:29Z INFO JobDispatcher] finish job request for job a304a82b-f70e-56fd-9943-d4491315be6c with result: Failed
+[2025-06-03 16:18:29Z INFO Terminal] WRITE LINE: 2025-06-03 16:18:29Z: Job build-and-push completed with result: Failed
+[2025-06-03 16:18:29Z INFO JobDispatcher] Stop renew job request for job a304a82b-f70e-56fd-9943-d4491315be6c.
+[2025-06-03 16:18:29Z INFO JobDispatcher] job renew has been cancelled, stop renew job a304a82b-f70e-56fd-9943-d4491315be6c.
+[2025-06-03 16:18:29Z INFO JobNotification] Entering JobCompleted Notification
+[2025-06-03 16:18:29Z INFO JobNotification] Entering EndMonitor
+[2025-06-03 16:18:29Z INFO MessageListener] Received job status event. JobState: Online
+[2025-06-03 16:19:17Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:19:17Z INFO ConfigurationStore] stored True
+[2025-06-03 16:19:17Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:19:17Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:19:17Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:19:17Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:20:07Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:20:07Z INFO ConfigurationStore] stored True
+[2025-06-03 16:20:07Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:20:07Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:20:07Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:20:07Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:20:59Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:20:59Z INFO ConfigurationStore] stored True
+[2025-06-03 16:20:59Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:20:59Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:20:59Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:20:59Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:21:50Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:21:50Z INFO ConfigurationStore] stored True
+[2025-06-03 16:21:50Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:21:50Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:21:50Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:21:50Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:22:43Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:22:43Z INFO ConfigurationStore] stored True
+[2025-06-03 16:22:43Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:22:43Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:22:43Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:22:43Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:23:35Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:23:35Z INFO ConfigurationStore] stored True
+[2025-06-03 16:23:35Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:23:35Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:23:35Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:23:35Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:24:26Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:24:26Z INFO ConfigurationStore] stored True
+[2025-06-03 16:24:26Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:24:26Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:24:26Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:24:26Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:25:17Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:25:17Z INFO ConfigurationStore] stored True
+[2025-06-03 16:25:17Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:25:17Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:25:17Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:25:17Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:26:07Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:26:07Z INFO ConfigurationStore] stored True
+[2025-06-03 16:26:07Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:26:07Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:26:07Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:26:07Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:26:58Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:26:58Z INFO ConfigurationStore] stored True
+[2025-06-03 16:26:58Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:26:58Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:26:58Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:26:58Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:27:49Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:27:49Z INFO ConfigurationStore] stored True
+[2025-06-03 16:27:49Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:27:49Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:27:49Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:27:49Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:28:39Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:28:39Z INFO ConfigurationStore] stored True
+[2025-06-03 16:28:39Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:28:39Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:28:39Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:28:39Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:29:30Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:29:30Z INFO ConfigurationStore] stored True
+[2025-06-03 16:29:30Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:29:30Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:29:30Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:29:30Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:30:21Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:30:21Z INFO ConfigurationStore] stored True
+[2025-06-03 16:30:21Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:30:21Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:30:21Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:30:21Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:31:11Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:31:11Z INFO ConfigurationStore] stored True
+[2025-06-03 16:31:11Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:31:11Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:31:11Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:31:11Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:32:02Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:32:02Z INFO ConfigurationStore] stored True
+[2025-06-03 16:32:02Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:32:02Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:32:02Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:32:02Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:32:02Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:32:04Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-06-03 16:32:54Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:32:54Z INFO ConfigurationStore] stored True
+[2025-06-03 16:32:54Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:32:54Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:32:54Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:32:54Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:33:45Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:33:45Z INFO ConfigurationStore] stored True
+[2025-06-03 16:33:45Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:33:45Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:33:45Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:33:45Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:34:36Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:34:36Z INFO ConfigurationStore] stored True
+[2025-06-03 16:34:36Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:34:36Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:34:36Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:34:36Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:35:26Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:35:26Z INFO ConfigurationStore] stored True
+[2025-06-03 16:35:26Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:35:26Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:35:26Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:35:26Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:36:17Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:36:19Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-06-03 16:36:19Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:36:19Z INFO ConfigurationStore] stored True
+[2025-06-03 16:36:19Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:36:19Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:36:19Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:36:19Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:37:11Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:37:11Z INFO ConfigurationStore] stored True
+[2025-06-03 16:37:11Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:37:11Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:37:11Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:37:11Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:38:02Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:38:02Z INFO ConfigurationStore] stored True
+[2025-06-03 16:38:02Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:38:02Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:38:02Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:38:02Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:38:52Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:38:52Z INFO ConfigurationStore] stored True
+[2025-06-03 16:38:52Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:38:52Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:38:52Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:38:52Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:39:43Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:39:43Z INFO ConfigurationStore] stored True
+[2025-06-03 16:39:43Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:39:43Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:39:43Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:39:43Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:40:33Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:40:33Z INFO ConfigurationStore] stored True
+[2025-06-03 16:40:33Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:40:33Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:40:33Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:40:33Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:41:24Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:41:24Z INFO ConfigurationStore] stored True
+[2025-06-03 16:41:24Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:41:24Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:41:24Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:41:24Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:42:15Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:42:15Z INFO ConfigurationStore] stored True
+[2025-06-03 16:42:15Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:42:15Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:42:15Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:42:15Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:43:06Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:43:06Z INFO ConfigurationStore] stored True
+[2025-06-03 16:43:06Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:43:06Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:43:06Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:43:06Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
+[2025-06-03 16:43:56Z INFO ConfigurationStore] HasCredentials()
+[2025-06-03 16:43:56Z INFO ConfigurationStore] stored True
+[2025-06-03 16:43:56Z INFO CredentialManager] GetCredentialProvider
+[2025-06-03 16:43:56Z INFO CredentialManager] Creating type OAuth
+[2025-06-03 16:43:56Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-03 16:43:56Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/admin/Documents/Project/cicdpipeline/code/actions-runner/.credentials_rsaparams
