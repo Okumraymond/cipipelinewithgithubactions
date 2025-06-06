@@ -34,9 +34,14 @@ jobs:
         working-directory: ./code
         run: make lint
 
-      - name: Login to Docker Registry
-        working-directory: ./code
-        run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin ${{ secrets.DOCKER_REGISTRY }}
+      - name: Login to Docker Hub
+        run: |
+        echo "${{ secrets.DOCKER_PASSWORD }}" | \
+        docker login -u "${{ secrets.DOCKER_USERNAME }}" \
+        --password-stdin docker.io
+      # - name: Login to Docker Registry
+      #  working-directory: ./code
+      #  run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin ${{ secrets.DOCKER_REGISTRY }}
 
       - name: Build and push Docker image
         working-directory: ./code
