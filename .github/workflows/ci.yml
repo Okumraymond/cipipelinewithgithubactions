@@ -13,20 +13,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          path: 'code'  # Checks out to code/ directory
+          path: 'code'
 
       - name: Set up Python
-        working-directory: ./code  # Sets base directory for all subsequent steps
+        working-directory: ./code
         run: |
-          # It's better to use pyenv local or activate in the shell,
-          # and ensure Python/pip is in the PATH for the runner.
-          # For a direct pip install in a venv, you can remove pyenv global.
-          # If pyenv global is required, ensure pyenv is properly initialized for the runner's shell.
-          # As per previous discussions, using a venv directly is usually more robust in Actions.
-          # python -m venv venv
-          # source venv/bin/activate
-          # pip install -r requirements.txt
-          # The lines below are if you specifically want to rely on pyenv global
           echo 'export PYENV_VERSION=3.11.9' >> $GITHUB_ENV
           pyenv global 3.11.9
           pip --version
@@ -44,26 +35,11 @@ jobs:
         run: make lint
 
       - name: Login to Docker Hub
-        # No working-directory needed here unless your login command
-        # somehow relies on a specific context, which is rare for login.
         run: |
           echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin docker.io
-
-      # Your commented out Login to Docker Registry step was almost identical
-      # - name: Login to Docker Registry
-      #   working-directory: ./code # This line would be okay if necessary
-      #   run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin ${{ secrets.DOCKER_REGISTRY }}
 
       - name: Build and push Docker image
         working-directory: ./code
         run: |
-          # Ensure you replace 'your-image-name' with the actual name
-          # Also, if you use docker.io as the registry, you typically don't
-          # need to prefix your image name with 'docker.io/' for `docker build`
-          # but `docker push` usually requires it if you want to push to Docker Hub.
-          # Check your DOCKER_REGISTRY secret - if it's "docker.io", the `docker build`
-          # command should likely just be `docker build -t your-image-name:latest .`
-          # or `docker build -t ${{ secrets.DOCKER_USERNAME }}/your-image-name:latest .`
-          # for Docker Hub. The push would then be `docker push ${{ secrets.DOCKER_USERNAME }}/your-image-name:latest`
-          docker build -t ${{ secrets.DOCKER_REGISTRY }}/cipipelinewithgitactions:latest .
-          docker push ${{ secrets.DOCKER_REGISTRY }}/cipipelinewithgitactions:latest
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/cipipelinewithgithubactions:latest .
+          docker push ${{ secrets.DOCKER_USERNAME }}/cipipelinewithgithubactions:latest
