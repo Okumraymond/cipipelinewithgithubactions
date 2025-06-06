@@ -4,36 +4,42 @@ on:
   push:
     paths:
       - 'code/**'
-  workflow_dispatch: # Allows manual triggering
+  workflow_dispatch:
 
 jobs:
   build-and-push:
-    runs-on: self-hosted # Uses your self-hosted runner
+    runs-on: self-hosted
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          path: 'code'  # Checks out to code/ directory
 
       - name: Set up Python
+        working-directory: ./code  # Sets base directory for all subsequent steps
         run: |
           echo 'export PYENV_VERSION=3.11.9' >> $GITHUB_ENV
           pyenv global 3.11.9
           pip --version
 
       - name: Build API
+        working-directory: ./code
         run: make build
 
       - name: Run tests
-        run: |  # Added space here after 'run:'
-          cd code
-          make test
+        working-directory: ./code
+        run: make test
 
       - name: Perform code linting
+        working-directory: ./code
         run: make lint
 
       - name: Login to Docker Registry
+        working-directory: ./code
         run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin ${{ secrets.DOCKER_REGISTRY }}
 
       - name: Build and push Docker image
+        working-directory: ./code
         run: |
           docker build -t ${{ secrets.DOCKER_REGISTRY }}/your-image-name:latest .
           docker push ${{ secrets.DOCKER_REGISTRY }}/your-image-name:latest
