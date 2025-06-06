@@ -7,7 +7,8 @@ build:
 
 # Run tests
 test:
-	PYTHONPATH=. pytest tests/ -v
+	#PYTHONPATH=. pytest tests/ -v
+        source venv/bin/activate && PYTHONPATH=. pytest tests/ -v
 
 # Lint the code
 lint:
