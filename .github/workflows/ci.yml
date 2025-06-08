@@ -2,25 +2,36 @@ name: CI Pipeline
 
 on:
   push:
+    branches: [ "main" ]
     paths:
-      - 'code/**'
+      - 'src/**'
+      - 'tests/**'
+      - 'Makefile'
+      - 'requirements.txt'
+      - 'Dockerfile'
   workflow_dispatch:
 
 jobs:
   build-and-push:
     runs-on: self-hosted
-
+    
     steps:
       - uses: actions/checkout@v4
         with:
           path: 'code'
+          clean: true  # Important for self-hosted runners
+
+      - name: Verify changed files
+        run: |
+          echo "Changed files:"
+          git diff --name-only HEAD^ HEAD
 
       - name: Set up Python
         working-directory: ./code
         run: |
           echo 'export PYENV_VERSION=3.11.9' >> $GITHUB_ENV
           pyenv global 3.11.9
-          pip --version
+          pip install -r requirements.txt
 
       - name: Build API
         working-directory: ./code
