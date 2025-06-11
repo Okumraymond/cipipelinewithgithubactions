@@ -24,7 +24,9 @@ jobs:
       - name: Verify changed files
         run: |
           echo "Changed files:"
-          git diff --name-only HEAD^ HEAD
+          git diff --name-only HEAD^ HEAD || echo "Initial commit - showing all files"
+          echo "Current files:"
+          ls -R
 
       - name: Set up Python
         working-directory: ./code
